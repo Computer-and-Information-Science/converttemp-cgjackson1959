@@ -1,15 +1,13 @@
-//TODO: Put your name here
-//import statements here
-public class Main() {
-  public static void main(String[] args) {
-    
-    //create a Scanner object
+// Christian Jackson
+//import statements here for the scanner class
 
-    //prompt for input
-
-    //create the ConvertTemp object
-
-    //print your output string
-        
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+      Scanner in = new Scanner(System.in);
+      System.out.println("What is the temp in Celcius? ");
+      double inputTemp = in.nextDouble();
+      ConvertTemp ct = new ConvertTemp(inputTemp);
+      System.out.printf("%.1f c = %.1f f%n", inputTemp, ct.getFTemp());
     }
 }

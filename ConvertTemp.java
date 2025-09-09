@@ -1,14 +1,27 @@
-//TO DO: Put your name here
-//TO DO: Describe tthe program here
+//Christian Jackson
+//Temperature Conversion Program
+
 public class ConvertTemp {
-  // put data members here
+ //Data members
+  private double cTemp, fTemp;
 
-  // put the constructor here
+  //constructor
+  public ConvertTemp(double inputTemp) {
+    this.cTemp = inputTemp;
+    this.fTemp = cTemp * (9.0/5.0) + 32;
+  }
   
-  // put getters here
+ //methods
+  public double getFTemp() {
+    return this.fTemp;
+  }
 
-  // put setters here
+  public double getCTemp() {
+    return this.cTemp;
+  }
 
-  //other member functions (methods here)
-  
+  public void updateTemps(double inputCTemp) {
+    this.cTemp = inputCTemp;
+    this.fTemp = cTemp * (9.0/5.0) +32;
+  }
 }
